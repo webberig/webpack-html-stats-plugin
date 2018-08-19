@@ -1,0 +1,35 @@
+{% extends './layout.html.twig' %}
+{% block nav %}
+    <li class="active"><a href="../index.html">Chunks</a></li>
+    <li><a href="../modules.html">Modules</a></li>
+{% endblock %}
+{% block content %}
+
+    <div class="container">
+        <h1>{{ chunk.id }}</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Size</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for module in chunk.modules %}
+                <tr>
+                    <th><a href="../modules/{{ module.index }}.html">{{ module.index }}</a></th>
+                    <th><a href="../modules/{{ module.index }}.html">{{ module.name }}</a>
+                        {% if module.chunks|length == 1 %}
+                            <span class="new badge green" data-badge-caption="">Unique</span>
+                        {% endif %}
+                    </th>
+                    <td class="text-right">{{ module.size|prettyBytes }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}

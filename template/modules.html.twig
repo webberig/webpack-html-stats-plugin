@@ -1,0 +1,31 @@
+{% extends './layout.html.twig' %}
+{% block nav %}
+    <li><a href="./index.html">Chunks</a></li>
+    <li class="active"><a href="./modules.html">Modules</a></li>
+{% endblock %}
+{% block content %}
+
+    <div class="container">
+        <h1>Modules</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Size</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for module in modules %}
+                <tr>
+                    <th><a href="./modules/{{ module.index }}.html">{{ module.index }}</a></th>
+                    <th><a href="./modules/{{ module.index }}.html">{{ module.name }}</a></th>
+                    <td class="text-right">{{ module.size|prettyBytes }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}

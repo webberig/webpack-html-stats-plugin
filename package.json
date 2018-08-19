@@ -1,0 +1,29 @@
+{
+  "name": "webpack-html-stats-plugin",
+  "version": "1.0.0",
+  "description": "Generate a static HTML report from webpack stats during build",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webberig/webpack-html-stats-plugin"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "bugs": {
+    "url": "https://github.com/webberig/webpack-html-stats-plugin/issues"
+  },
+  "author": {
+    "name": "Mathieu Maes",
+    "email": "mathieu@webberig.be",
+    "url": "http://www.webberig.be/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "pretty-bytes": "^5.1.0",
+    "twig": "^1.12.0"
+  }
+}

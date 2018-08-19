@@ -1,0 +1,59 @@
+{% extends './layout.html.twig' %}
+{% block nav %}
+    <li><a href="../index.html">Chunks</a></li>
+    <li class="active"><a href="../modules.html">Modules</a></li>
+{% endblock %}
+{% block content %}
+
+    <div class="container">
+        <h1 class="truncate">{{ module.name }} <small>{{ module.index }}</small></h1>
+
+        <h3>Reasons</h3>
+        {% if context.getModuleReasons(module.id)|length == 0 %}
+        <p>None</p>
+        {% else %}
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for reason in context.getModuleReasons(module.id) %}
+                <tr>
+                    <th><a href="../modules/{{ reason.index }}.html">{{ reason.index }}</a></th>
+                    <th><a href="../modules/{{ reason.index }}.html">{{ reason.name }}</a></th>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+
+        <h3>Dependencies</h3>
+        {% if context.getModuleDependencies(module.id)|length == 0 %}
+            <p>None</p>
+        {% else %}
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for dep in context.getModuleDependencies(module.id) %}
+                <tr>
+                    <th><a href="../modules/{{ dep.index }}.html">{{ dep.index }}</a></th>
+                    <th><a href="../modules/{{ dep.index }}.html">{{ dep.name }}</a></th>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+    </div>
+
+{% endblock %}
