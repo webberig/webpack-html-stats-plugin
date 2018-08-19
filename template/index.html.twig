@@ -1,18 +1,32 @@
 {% extends './layout.html.twig' %}
 {% block nav %}
-    <li class="active"><a href="index.html">Chunks</a></li>
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./chunks.html">Chunks</a></li>
     <li><a href="./modules.html">Modules</a></li>
 {% endblock %}
 {% block content %}
     <div class="container">
-        <h1>Chunks</h1>
-        <div class="collection">
-            {% for chunk in chunks %}
-                <a href="./chunks/{{chunk.hash}}.html" class="collection-item">
-                    <span class="badge">{{chunk.size|prettyBytes}}</span>
-                    {{chunk.id}}
-                </a>
-            {% endfor %}
-        </div>
+        <h1>Overview</h1>
+        <table>
+            <tbody>
+            <tr>
+                <th>Webpack version</th>
+                <td>{{ version }}</td>
+            </tr>
+            <tr>
+                <th>Hash</th>
+                <td>{{ hash }}</td>
+            </tr>
+            <tr>
+                <th>Warnings</th>
+                <td>{{ warnings|length == 1 ? "1 warning" : warnings|length ~ " warnings" }}</td>
+            </tr>
+            <tr>
+                <th>Errors</th>
+                <td>{{ errors|length == 1 ? "1 error" : errors|length ~ " errors" }}</td>
+            </tr>
+            </tbody>
+        </table>
+        {{ stats }}
     </div>
 {% endblock %}
