@@ -4,6 +4,7 @@
   "description": "Generate a static HTML report from webpack stats during build",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint lib/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,5 +26,12 @@
   "dependencies": {
     "pretty-bytes": "^5.1.0",
     "twig": "^1.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1"
   }
 }
