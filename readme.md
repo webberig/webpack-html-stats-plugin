@@ -1,6 +1,8 @@
 Webpack HTML Stats Plugin
 ==========================
 
+[![Build Status](https://travis-ci.org/webberig/webpack-html-stats-plugin.svg?branch=master)](https://travis-ci.org/webberig/webpack-html-stats-plugin)
+
 This plugin will generate an HTML report using the Webpack stats object.
 
 The result should be similar to that of [webpack analyse](http://webpack.github.io/analyse/)
