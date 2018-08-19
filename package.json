@@ -1,6 +1,6 @@
 {
   "name": "webpack-html-stats-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate a static HTML report from webpack stats during build",
   "main": "index.js",
   "scripts": {
