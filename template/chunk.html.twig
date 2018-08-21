@@ -1,13 +1,20 @@
 {% extends './layout.html.twig' %}
 {% block nav %}
     <li><a href="../index.html">Home</a></li>
+    <li><a href="../assets.html">Assets</a></li>
     <li class="active"><a href="../chunks.html">Chunks</a></li>
     <li><a href="../modules.html">Modules</a></li>
 {% endblock %}
 {% block content %}
 
     <div class="container">
-        <h1>{{ chunk.id }}</h1>
+        <h1>{{ chunk.names|join(" ") }}</h1>
+        <p class="badges">
+            <span class="new badge {{ chunk.rendered ? "green" : "gray" }}" data-badge-caption="{{ chunk.rendered }}">Rendered: </span>
+            <span class="new badge {{ chunk.initial ? "green" : "grey lighten-1" }}" data-badge-caption="{{ chunk.initial }}">Initial: </span>
+            <span class="new badge {{ chunk.entry ? "green" : "grey lighten-1" }}" data-badge-caption="{{ chunk.entry }}">Entry: </span>
+        </p>
+        <h4>Modules</h4>
         <table>
             <thead>
             <tr>
@@ -30,6 +37,13 @@
                 </tr>
             {% endfor %}
             </tbody>
+            <tfoot>
+            <tr class="blue-grey lighten-5">
+                <th></th>
+                <th></th>
+                <th>{{ chunk.size|prettyBytes }}</th>
+            </tr>
+            </tfoot>
         </table>
     </div>
 

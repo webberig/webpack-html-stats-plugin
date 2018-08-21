@@ -1,6 +1,7 @@
 {% extends './layout.html.twig' %}
 {% block nav %}
     <li><a href="../index.html">Home</a></li>
+    <li><a href="../assets.html">Assets</a></li>
     <li><a href="../chunks.html">Chunks</a></li>
     <li class="active"><a href="../modules.html">Modules</a></li>
 {% endblock %}
@@ -8,8 +9,8 @@
 
     <div class="container">
         <h1 class="truncate">{{ module.name }} <small>{{ module.index }}</small></h1>
-
-        <h3>Reasons</h3>
+<p></p>
+        <h4>Reasons</h4>
         {% if context.getModuleReasons(module.id)|length == 0 %}
         <p>None</p>
         {% else %}
@@ -33,7 +34,7 @@
         </table>
         {% endif %}
 
-        <h3>Dependencies</h3>
+        <h4>Dependencies</h4>
         {% if context.getModuleDependencies(module.id)|length == 0 %}
             <p>None</p>
         {% else %}

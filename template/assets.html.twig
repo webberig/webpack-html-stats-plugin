@@ -1,0 +1,27 @@
+{% extends './layout.html.twig' %}
+{% block nav %}
+    <li><a href="./index.html">Home</a></li>
+    <li class="active"><a href="./assets.html">Assets</a></li>
+    <li><a href="./chunks.html">Chunks</a></li>
+    <li><a href="./modules.html">Modules</a></li>
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <h1>Assets</h1>
+        <table>
+            {% for asset in context.assets %}
+                <tr>
+                    <th colspan="2">{{ asset.name }}</th>
+                    <th>{{ asset.size|prettyBytes }}</th>
+                </tr>
+                {% for chunk in context.getAssetChunks(asset) %}
+                    <tr>
+                        <td style="width: 25px"></td>
+                        <td><a href="./chunks/{{ chunk.hash }}.html">{{ chunk.id }}</a></td>
+                        <td>{{ chunk.size|prettyBytes }}</td>
+                    </tr>
+                {% endfor %}
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}
