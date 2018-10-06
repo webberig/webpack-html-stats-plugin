@@ -1,7 +1,5 @@
-"use strict";
-
-const HtmlStatsPlugin = require("./lib/HtmlStatsPlugin");
+const HtmlStatsPlugin = require('./lib/HtmlStatsPlugin');
 
 module.exports = {
-    HtmlStatsPlugin
+    HtmlStatsPlugin,
 };
