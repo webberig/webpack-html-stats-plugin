@@ -3,6 +3,25 @@ node_js:
   - "6"
   - "8"
   - "10"
-script:
-    - yarn lint
 
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm install -g yarn webpack-cli
+  - yarn install
+
+script:
+  - yarn lint
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  script:
+    - cd example
+    - webpack
+  local_dir: example/webpackReport
+  on:
+    branch: master
