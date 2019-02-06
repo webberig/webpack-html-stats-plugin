@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint lib/",
     "test": "nyc ava lib/*-spec.js",
-    "test:watch": "ava lib/*-spec.js --watch"
+    "test:watch": "ava lib/*-spec.js --watch",
+    "report": "webpack --config example/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -42,6 +43,8 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
-    "nyc": "^13.2.0"
+    "nyc": "^13.2.0",
+    "webpack": "^4.29.2",
+    "webpack-cli": "^3.2.3"
   }
 }

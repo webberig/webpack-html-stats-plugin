@@ -9,7 +9,6 @@ cache:
     - node_modules
 
 install:
-  - npm install -g yarn webpack-cli
   - yarn install
 
 script:
@@ -21,6 +20,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: example/webpackReport
+  local_dir: webpackReport
   on:
     branch: master

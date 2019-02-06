@@ -64,4 +64,5 @@ typings/
 
 .idea
 
-/example/dist/
+/dist/
+/webpackReport/
