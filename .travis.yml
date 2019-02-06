@@ -14,14 +14,13 @@ install:
 
 script:
   - yarn lint
+  - cd example/
+  - webpack
 
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  script:
-    - cd example
-    - webpack
   local_dir: example/webpackReport
   on:
     branch: master
