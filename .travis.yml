@@ -14,7 +14,7 @@ install:
 script:
   - yarn lint
   - cd example/
-  - webpack
+  - yarn report
 
 deploy:
   provider: pages
