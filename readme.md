@@ -10,6 +10,7 @@ with the difference that you don't need to upload/select your `stats.json`
 file. The report is made of static HTML files that you can easily publish for your team
 to review, or help you optimize your bundles.
 
+Browse a sample report: https://webberig.github.io/webpack-html-stats-plugin/
 
 ## Installation
 
