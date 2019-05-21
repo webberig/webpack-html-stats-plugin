@@ -17,8 +17,8 @@ Browse a sample report: https://webberig.github.io/webpack-html-stats-plugin/
 The plugin is available via [npm](https://www.npmjs.com/package/webpack-html-stats-plugin):
 
 ```
-$ npm install --save-dev webpack-stats-plugin
-$ yarn add --dev webpack-stats-plugin
+$ npm install --save-dev webpack-html-stats-plugin
+$ yarn add --dev webpack-html-stats-plugin
 ```
 
 Add the plugin to your `webpack.config.js`:
