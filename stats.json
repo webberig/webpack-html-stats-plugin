@@ -1,0 +1,845 @@
+{
+    "errors": [],
+    "warnings": [],
+    "version": "4.29.2",
+    "hash": "7b67c9236b9db46cca2f",
+    "time": 99,
+    "builtAt": 1577532844646,
+    "publicPath": "",
+    "outputPath": "/home/travis/build/webberig/webpack-html-stats-plugin/dist",
+    "assetsByChunkName": {
+        "page1": "page1.js",
+        "page2": "page2.js"
+    },
+    "assets": [
+        {
+            "name": "page1.js",
+            "size": 4363,
+            "chunks": [
+                "page1"
+            ],
+            "chunkNames": [
+                "page1"
+            ],
+            "emitted": true
+        },
+        {
+            "name": "page2.js",
+            "size": 4367,
+            "chunks": [
+                "page2"
+            ],
+            "chunkNames": [
+                "page2"
+            ],
+            "emitted": true
+        }
+    ],
+    "filteredAssets": 0,
+    "entrypoints": {
+        "page1": {
+            "chunks": [
+                "page1"
+            ],
+            "assets": [
+                "page1.js"
+            ],
+            "children": {},
+            "childAssets": {}
+        },
+        "page2": {
+            "chunks": [
+                "page2"
+            ],
+            "assets": [
+                "page2.js"
+            ],
+            "children": {},
+            "childAssets": {}
+        }
+    },
+    "namedChunkGroups": {
+        "page1": {
+            "chunks": [
+                "page1"
+            ],
+            "assets": [
+                "page1.js"
+            ],
+            "children": {},
+            "childAssets": {}
+        },
+        "page2": {
+            "chunks": [
+                "page2"
+            ],
+            "assets": [
+                "page2.js"
+            ],
+            "children": {},
+            "childAssets": {}
+        }
+    },
+    "chunks": [
+        {
+            "id": "page2",
+            "rendered": true,
+            "initial": true,
+            "entry": true,
+            "size": 104,
+            "names": [
+                "page2"
+            ],
+            "files": [
+                "page2.js"
+            ],
+            "hash": "974887e4b32391069d94",
+            "siblings": [],
+            "parents": [],
+            "children": [],
+            "childrenByOrder": {},
+            "modules": [
+                {
+                    "id": "./example/src/page2.js",
+                    "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page2.js",
+                    "name": "./example/src/page2.js",
+                    "index": 2,
+                    "index2": 2,
+                    "size": 56,
+                    "cacheable": true,
+                    "built": true,
+                    "optional": false,
+                    "prefetched": false,
+                    "chunks": [
+                        "page2"
+                    ],
+                    "issuer": null,
+                    "issuerId": null,
+                    "issuerName": null,
+                    "issuerPath": null,
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "assets": [],
+                    "reasons": [
+                        {
+                            "moduleId": null,
+                            "moduleIdentifier": null,
+                            "module": null,
+                            "moduleName": null,
+                            "type": "single entry",
+                            "userRequest": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page2",
+                            "loc": "page2"
+                        }
+                    ],
+                    "providedExports": null,
+                    "optimizationBailout": [],
+                    "depth": 0
+                },
+                {
+                    "id": "./example/src/shared.js",
+                    "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/shared.js",
+                    "name": "./example/src/shared.js",
+                    "index": 1,
+                    "index2": 0,
+                    "size": 48,
+                    "cacheable": true,
+                    "built": true,
+                    "optional": false,
+                    "prefetched": false,
+                    "chunks": [
+                        "page1",
+                        "page2"
+                    ],
+                    "issuer": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                    "issuerId": "./example/src/page1.js",
+                    "issuerName": "./example/src/page1.js",
+                    "issuerPath": [
+                        {
+                            "id": "./example/src/page1.js",
+                            "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                            "name": "./example/src/page1.js"
+                        }
+                    ],
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "assets": [],
+                    "reasons": [
+                        {
+                            "moduleId": "./example/src/page1.js",
+                            "moduleIdentifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                            "module": "./example/src/page1.js",
+                            "moduleName": "./example/src/page1.js",
+                            "type": "cjs require",
+                            "userRequest": "./shared",
+                            "loc": "1:0-19"
+                        },
+                        {
+                            "moduleId": "./example/src/page2.js",
+                            "moduleIdentifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page2.js",
+                            "module": "./example/src/page2.js",
+                            "moduleName": "./example/src/page2.js",
+                            "type": "cjs require",
+                            "userRequest": "./shared",
+                            "loc": "1:0-19"
+                        }
+                    ],
+                    "providedExports": null,
+                    "optimizationBailout": [],
+                    "depth": 1
+                }
+            ],
+            "filteredModules": 0,
+            "origins": [
+                {
+                    "module": "",
+                    "moduleIdentifier": "",
+                    "moduleName": "",
+                    "loc": "page2",
+                    "request": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page2",
+                    "reasons": []
+                }
+            ]
+        },
+        {
+            "id": "page1",
+            "rendered": true,
+            "initial": true,
+            "entry": true,
+            "size": 100,
+            "names": [
+                "page1"
+            ],
+            "files": [
+                "page1.js"
+            ],
+            "hash": "004a56853ad3dac52c99",
+            "siblings": [],
+            "parents": [],
+            "children": [],
+            "childrenByOrder": {},
+            "modules": [
+                {
+                    "id": "./example/src/page1.js",
+                    "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                    "name": "./example/src/page1.js",
+                    "index": 0,
+                    "index2": 1,
+                    "size": 52,
+                    "cacheable": true,
+                    "built": true,
+                    "optional": false,
+                    "prefetched": false,
+                    "chunks": [
+                        "page1"
+                    ],
+                    "issuer": null,
+                    "issuerId": null,
+                    "issuerName": null,
+                    "issuerPath": null,
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "assets": [],
+                    "reasons": [
+                        {
+                            "moduleId": null,
+                            "moduleIdentifier": null,
+                            "module": null,
+                            "moduleName": null,
+                            "type": "single entry",
+                            "userRequest": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1",
+                            "loc": "page1"
+                        }
+                    ],
+                    "providedExports": null,
+                    "optimizationBailout": [],
+                    "depth": 0
+                },
+                {
+                    "id": "./example/src/shared.js",
+                    "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/shared.js",
+                    "name": "./example/src/shared.js",
+                    "index": 1,
+                    "index2": 0,
+                    "size": 48,
+                    "cacheable": true,
+                    "built": true,
+                    "optional": false,
+                    "prefetched": false,
+                    "chunks": [
+                        "page1",
+                        "page2"
+                    ],
+                    "issuer": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                    "issuerId": "./example/src/page1.js",
+                    "issuerName": "./example/src/page1.js",
+                    "issuerPath": [
+                        {
+                            "id": "./example/src/page1.js",
+                            "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                            "name": "./example/src/page1.js"
+                        }
+                    ],
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "assets": [],
+                    "reasons": [
+                        {
+                            "moduleId": "./example/src/page1.js",
+                            "moduleIdentifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                            "module": "./example/src/page1.js",
+                            "moduleName": "./example/src/page1.js",
+                            "type": "cjs require",
+                            "userRequest": "./shared",
+                            "loc": "1:0-19"
+                        },
+                        {
+                            "moduleId": "./example/src/page2.js",
+                            "moduleIdentifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page2.js",
+                            "module": "./example/src/page2.js",
+                            "moduleName": "./example/src/page2.js",
+                            "type": "cjs require",
+                            "userRequest": "./shared",
+                            "loc": "1:0-19"
+                        }
+                    ],
+                    "providedExports": null,
+                    "optimizationBailout": [],
+                    "depth": 1
+                }
+            ],
+            "filteredModules": 0,
+            "origins": [
+                {
+                    "module": "",
+                    "moduleIdentifier": "",
+                    "moduleName": "",
+                    "loc": "page1",
+                    "request": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1",
+                    "reasons": []
+                }
+            ]
+        }
+    ],
+    "modules": [
+        {
+            "id": "./example/src/page2.js",
+            "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page2.js",
+            "name": "./example/src/page2.js",
+            "index": 2,
+            "index2": 2,
+            "size": 56,
+            "cacheable": true,
+            "built": true,
+            "optional": false,
+            "prefetched": false,
+            "chunks": [
+                "page2"
+            ],
+            "issuer": null,
+            "issuerId": null,
+            "issuerName": null,
+            "issuerPath": null,
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "assets": [],
+            "reasons": [
+                {
+                    "moduleId": null,
+                    "moduleIdentifier": null,
+                    "module": null,
+                    "moduleName": null,
+                    "type": "single entry",
+                    "userRequest": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page2",
+                    "loc": "page2"
+                }
+            ],
+            "providedExports": null,
+            "optimizationBailout": [],
+            "depth": 0,
+            "dependencies": [
+                "./example/src/shared.js"
+            ]
+        },
+        {
+            "id": "./example/src/page1.js",
+            "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+            "name": "./example/src/page1.js",
+            "index": 0,
+            "index2": 1,
+            "size": 52,
+            "cacheable": true,
+            "built": true,
+            "optional": false,
+            "prefetched": false,
+            "chunks": [
+                "page1"
+            ],
+            "issuer": null,
+            "issuerId": null,
+            "issuerName": null,
+            "issuerPath": null,
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "assets": [],
+            "reasons": [
+                {
+                    "moduleId": null,
+                    "moduleIdentifier": null,
+                    "module": null,
+                    "moduleName": null,
+                    "type": "single entry",
+                    "userRequest": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1",
+                    "loc": "page1"
+                }
+            ],
+            "providedExports": null,
+            "optimizationBailout": [],
+            "depth": 0,
+            "dependencies": [
+                "./example/src/shared.js"
+            ]
+        },
+        {
+            "id": "./example/src/shared.js",
+            "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/shared.js",
+            "name": "./example/src/shared.js",
+            "index": 1,
+            "index2": 0,
+            "size": 48,
+            "cacheable": true,
+            "built": true,
+            "optional": false,
+            "prefetched": false,
+            "chunks": [
+                "page1",
+                "page2"
+            ],
+            "issuer": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+            "issuerId": "./example/src/page1.js",
+            "issuerName": "./example/src/page1.js",
+            "issuerPath": [
+                {
+                    "id": "./example/src/page1.js",
+                    "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                    "name": "./example/src/page1.js"
+                }
+            ],
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "assets": [],
+            "reasons": [
+                {
+                    "moduleId": "./example/src/page1.js",
+                    "moduleIdentifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                    "module": "./example/src/page1.js",
+                    "moduleName": "./example/src/page1.js",
+                    "type": "cjs require",
+                    "userRequest": "./shared",
+                    "loc": "1:0-19"
+                },
+                {
+                    "moduleId": "./example/src/page2.js",
+                    "moduleIdentifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page2.js",
+                    "module": "./example/src/page2.js",
+                    "moduleName": "./example/src/page2.js",
+                    "type": "cjs require",
+                    "userRequest": "./shared",
+                    "loc": "1:0-19"
+                }
+            ],
+            "providedExports": null,
+            "optimizationBailout": [],
+            "depth": 1,
+            "dependencies": []
+        }
+    ],
+    "filteredModules": 0,
+    "children": [],
+    "indexedModules": {
+        "./example/src/page2.js": {
+            "id": "./example/src/page2.js",
+            "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page2.js",
+            "name": "./example/src/page2.js",
+            "index": 2,
+            "index2": 2,
+            "size": 56,
+            "cacheable": true,
+            "built": true,
+            "optional": false,
+            "prefetched": false,
+            "chunks": [
+                "page2"
+            ],
+            "issuer": null,
+            "issuerId": null,
+            "issuerName": null,
+            "issuerPath": null,
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "assets": [],
+            "reasons": [
+                {
+                    "moduleId": null,
+                    "moduleIdentifier": null,
+                    "module": null,
+                    "moduleName": null,
+                    "type": "single entry",
+                    "userRequest": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page2",
+                    "loc": "page2"
+                }
+            ],
+            "providedExports": null,
+            "optimizationBailout": [],
+            "depth": 0,
+            "dependencies": [
+                "./example/src/shared.js"
+            ]
+        },
+        "./example/src/page1.js": {
+            "id": "./example/src/page1.js",
+            "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+            "name": "./example/src/page1.js",
+            "index": 0,
+            "index2": 1,
+            "size": 52,
+            "cacheable": true,
+            "built": true,
+            "optional": false,
+            "prefetched": false,
+            "chunks": [
+                "page1"
+            ],
+            "issuer": null,
+            "issuerId": null,
+            "issuerName": null,
+            "issuerPath": null,
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "assets": [],
+            "reasons": [
+                {
+                    "moduleId": null,
+                    "moduleIdentifier": null,
+                    "module": null,
+                    "moduleName": null,
+                    "type": "single entry",
+                    "userRequest": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1",
+                    "loc": "page1"
+                }
+            ],
+            "providedExports": null,
+            "optimizationBailout": [],
+            "depth": 0,
+            "dependencies": [
+                "./example/src/shared.js"
+            ]
+        },
+        "./example/src/shared.js": {
+            "id": "./example/src/shared.js",
+            "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/shared.js",
+            "name": "./example/src/shared.js",
+            "index": 1,
+            "index2": 0,
+            "size": 48,
+            "cacheable": true,
+            "built": true,
+            "optional": false,
+            "prefetched": false,
+            "chunks": [
+                "page1",
+                "page2"
+            ],
+            "issuer": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+            "issuerId": "./example/src/page1.js",
+            "issuerName": "./example/src/page1.js",
+            "issuerPath": [
+                {
+                    "id": "./example/src/page1.js",
+                    "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                    "name": "./example/src/page1.js"
+                }
+            ],
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "assets": [],
+            "reasons": [
+                {
+                    "moduleId": "./example/src/page1.js",
+                    "moduleIdentifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                    "module": "./example/src/page1.js",
+                    "moduleName": "./example/src/page1.js",
+                    "type": "cjs require",
+                    "userRequest": "./shared",
+                    "loc": "1:0-19"
+                },
+                {
+                    "moduleId": "./example/src/page2.js",
+                    "moduleIdentifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page2.js",
+                    "module": "./example/src/page2.js",
+                    "moduleName": "./example/src/page2.js",
+                    "type": "cjs require",
+                    "userRequest": "./shared",
+                    "loc": "1:0-19"
+                }
+            ],
+            "providedExports": null,
+            "optimizationBailout": [],
+            "depth": 1,
+            "dependencies": []
+        }
+    },
+    "indexedChunks": {
+        "page2": {
+            "id": "page2",
+            "rendered": true,
+            "initial": true,
+            "entry": true,
+            "size": 104,
+            "names": [
+                "page2"
+            ],
+            "files": [
+                "page2.js"
+            ],
+            "hash": "974887e4b32391069d94",
+            "siblings": [],
+            "parents": [],
+            "children": [],
+            "childrenByOrder": {},
+            "modules": [
+                {
+                    "id": "./example/src/page2.js",
+                    "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page2.js",
+                    "name": "./example/src/page2.js",
+                    "index": 2,
+                    "index2": 2,
+                    "size": 56,
+                    "cacheable": true,
+                    "built": true,
+                    "optional": false,
+                    "prefetched": false,
+                    "chunks": [
+                        "page2"
+                    ],
+                    "issuer": null,
+                    "issuerId": null,
+                    "issuerName": null,
+                    "issuerPath": null,
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "assets": [],
+                    "reasons": [
+                        {
+                            "moduleId": null,
+                            "moduleIdentifier": null,
+                            "module": null,
+                            "moduleName": null,
+                            "type": "single entry",
+                            "userRequest": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page2",
+                            "loc": "page2"
+                        }
+                    ],
+                    "providedExports": null,
+                    "optimizationBailout": [],
+                    "depth": 0
+                },
+                {
+                    "id": "./example/src/shared.js",
+                    "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/shared.js",
+                    "name": "./example/src/shared.js",
+                    "index": 1,
+                    "index2": 0,
+                    "size": 48,
+                    "cacheable": true,
+                    "built": true,
+                    "optional": false,
+                    "prefetched": false,
+                    "chunks": [
+                        "page1",
+                        "page2"
+                    ],
+                    "issuer": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                    "issuerId": "./example/src/page1.js",
+                    "issuerName": "./example/src/page1.js",
+                    "issuerPath": [
+                        {
+                            "id": "./example/src/page1.js",
+                            "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                            "name": "./example/src/page1.js"
+                        }
+                    ],
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "assets": [],
+                    "reasons": [
+                        {
+                            "moduleId": "./example/src/page1.js",
+                            "moduleIdentifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                            "module": "./example/src/page1.js",
+                            "moduleName": "./example/src/page1.js",
+                            "type": "cjs require",
+                            "userRequest": "./shared",
+                            "loc": "1:0-19"
+                        },
+                        {
+                            "moduleId": "./example/src/page2.js",
+                            "moduleIdentifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page2.js",
+                            "module": "./example/src/page2.js",
+                            "moduleName": "./example/src/page2.js",
+                            "type": "cjs require",
+                            "userRequest": "./shared",
+                            "loc": "1:0-19"
+                        }
+                    ],
+                    "providedExports": null,
+                    "optimizationBailout": [],
+                    "depth": 1
+                }
+            ],
+            "filteredModules": 0,
+            "origins": [
+                {
+                    "module": "",
+                    "moduleIdentifier": "",
+                    "moduleName": "",
+                    "loc": "page2",
+                    "request": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page2",
+                    "reasons": []
+                }
+            ]
+        },
+        "page1": {
+            "id": "page1",
+            "rendered": true,
+            "initial": true,
+            "entry": true,
+            "size": 100,
+            "names": [
+                "page1"
+            ],
+            "files": [
+                "page1.js"
+            ],
+            "hash": "004a56853ad3dac52c99",
+            "siblings": [],
+            "parents": [],
+            "children": [],
+            "childrenByOrder": {},
+            "modules": [
+                {
+                    "id": "./example/src/page1.js",
+                    "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                    "name": "./example/src/page1.js",
+                    "index": 0,
+                    "index2": 1,
+                    "size": 52,
+                    "cacheable": true,
+                    "built": true,
+                    "optional": false,
+                    "prefetched": false,
+                    "chunks": [
+                        "page1"
+                    ],
+                    "issuer": null,
+                    "issuerId": null,
+                    "issuerName": null,
+                    "issuerPath": null,
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "assets": [],
+                    "reasons": [
+                        {
+                            "moduleId": null,
+                            "moduleIdentifier": null,
+                            "module": null,
+                            "moduleName": null,
+                            "type": "single entry",
+                            "userRequest": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1",
+                            "loc": "page1"
+                        }
+                    ],
+                    "providedExports": null,
+                    "optimizationBailout": [],
+                    "depth": 0
+                },
+                {
+                    "id": "./example/src/shared.js",
+                    "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/shared.js",
+                    "name": "./example/src/shared.js",
+                    "index": 1,
+                    "index2": 0,
+                    "size": 48,
+                    "cacheable": true,
+                    "built": true,
+                    "optional": false,
+                    "prefetched": false,
+                    "chunks": [
+                        "page1",
+                        "page2"
+                    ],
+                    "issuer": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                    "issuerId": "./example/src/page1.js",
+                    "issuerName": "./example/src/page1.js",
+                    "issuerPath": [
+                        {
+                            "id": "./example/src/page1.js",
+                            "identifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                            "name": "./example/src/page1.js"
+                        }
+                    ],
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "assets": [],
+                    "reasons": [
+                        {
+                            "moduleId": "./example/src/page1.js",
+                            "moduleIdentifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1.js",
+                            "module": "./example/src/page1.js",
+                            "moduleName": "./example/src/page1.js",
+                            "type": "cjs require",
+                            "userRequest": "./shared",
+                            "loc": "1:0-19"
+                        },
+                        {
+                            "moduleId": "./example/src/page2.js",
+                            "moduleIdentifier": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page2.js",
+                            "module": "./example/src/page2.js",
+                            "moduleName": "./example/src/page2.js",
+                            "type": "cjs require",
+                            "userRequest": "./shared",
+                            "loc": "1:0-19"
+                        }
+                    ],
+                    "providedExports": null,
+                    "optimizationBailout": [],
+                    "depth": 1
+                }
+            ],
+            "filteredModules": 0,
+            "origins": [
+                {
+                    "module": "",
+                    "moduleIdentifier": "",
+                    "moduleName": "",
+                    "loc": "page1",
+                    "request": "/home/travis/build/webberig/webpack-html-stats-plugin/example/src/page1",
+                    "reasons": []
+                }
+            ]
+        }
+    }
+}
